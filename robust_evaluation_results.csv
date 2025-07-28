@@ -1,0 +1,6 @@
+retriever_name,avg_docs_retrieved,avg_relevance,status
+naive,5.0,0.3288095238095238,success
+bm25,5.0,0.41825396825396827,success
+multi_query,17.2,0.3788095238095238,success
+parent_document,4.0,0.36095238095238097,success
+ensemble,18.4,0.4718253968253968,success

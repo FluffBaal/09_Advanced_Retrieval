@@ -1,0 +1,93 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# UV
+.venv/
+uv.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+*api_key*
+*api-key*
+secrets/
+config/secrets/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Logs
+*.log
+logs/
+
+# Data files (optional - uncomment if needed)
+# data/
+# *.csv
+# *.json
+
+# Model files
+*.pkl
+*.h5
+*.model
+*.pth
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Output files
+output/
+results/
+evaluation_results.csv
+evaluation_summary.txt
+retriever_evaluation_results.csv

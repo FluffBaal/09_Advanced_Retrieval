@@ -1,0 +1,18 @@
+ADVANCED RETRIEVAL EVALUATION REPORT
+================================================================================
+
+Date: 2025-07-27 06:38:52.853669
+Documents: 1200
+Test Queries: 10
+Retrievers Tested: 6
+
+RESULTS:
+      Retriever RAGAS Score Precision Recall F1 Score Latency (s) Est. Cost ($) Avg Docs
+          NAIVE       0.086     0.033  0.391    0.061        2.43        0.0010     10.0
+           BM25       0.077     0.029  0.399    0.054        0.02        0.0005     10.0
+    MULTI_QUERY       0.089     0.035  0.379    0.064       17.37        0.0300     21.3
+PARENT_DOCUMENT       0.093     0.036  0.377    0.066        2.60        0.0020      4.0
+       ENSEMBLE       0.088     0.033  0.441    0.062        3.16        0.0015     19.3
+
+BEST RETRIEVER: PARENT_DOCUMENT
+Score: 0.093
