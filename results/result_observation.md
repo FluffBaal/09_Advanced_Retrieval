@@ -97,6 +97,20 @@ This makes Contextual Compression ideal for budget-conscious deployments requiri
 ### Detailed Performance Analysis
 ![Retriever Evaluation Details](retriever_evaluation_details.png)
 
-## Conclusion
+## At Scale
 
-For structured financial complaint data, the Ensemble approach's comprehensive recall (95.46%) outweighs its precision limitations, making it the optimal choice for production deployments where capturing all relevant information is critical.
+Cost Analysis Insight:
+
+The 5x cost difference between solutions becomes critical at scale. Processing 1 million queries would cost:
+
+- Ensemble: $1,619
+
+- Contextual Compression: $314
+
+- BM25: $424
+
+This $1,300 difference per million queries makes Contextual Compression attractive for large-scale deployments where lower accuracy is acceptable.
+
+Final Takeaway:
+
+The best retrieval system isn't necessarily the most advanced or the highest-scoring on individual metrics. It's the one that balances performance, cost, and speed for your specific use case. For structured financial data, simple hybrid approaches provide the optimal balance.
