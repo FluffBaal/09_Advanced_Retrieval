@@ -89,6 +89,14 @@ This makes Contextual Compression ideal for budget-conscious deployments requiri
 - Parent Document adds unnecessary complexity for CSV data
 - Multi-Query increases costs due to multiple LLM calls
 
+## Visualizations
+
+### Unified Performance Overview
+![Unified Retriever Performance](unified_retriever_performance.png)
+
+### Detailed Performance Analysis
+![Retriever Evaluation Details](retriever_evaluation_details.png)
+
 ## Conclusion
 
 For structured financial complaint data, the Ensemble approach's comprehensive recall (95.46%) outweighs its precision limitations, making it the optimal choice for production deployments where capturing all relevant information is critical.
