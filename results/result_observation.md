@@ -59,6 +59,18 @@ Despite having the lowest context precision (0.7446), Ensemble Retriever's excep
 2. **Cost vs Performance**: Contextual Compression provides best value at $0.0066/run
 3. **Precision vs Recall**: High-precision methods (BM25, Contextual) sacrifice recall
 
+### Understanding Cost-Efficiency Metrics
+The **score/dollar** metric shows performance per dollar spent. For example, Contextual Compression's 122.61 score/dollar means:
+- For every $1 spent, you get 122.61 units of RAGAS score performance
+- Calculated as: RAGAS Score (0.8215) ÷ Cost ($0.0066) = 122.61
+
+**Cost-efficiency comparison**:
+- **Contextual Compression**: 122.61 score/dollar - achieves 98% of winner's performance at 19% of cost
+- **BM25 Retriever**: 90.43 score/dollar - good balance of cost and performance
+- **Ensemble Retriever**: 24.53 score/dollar - best performance but most expensive
+
+This makes Contextual Compression ideal for budget-conscious deployments requiring good performance without high costs.
+
 ### Surprising Findings
 - **Parent Document Retriever** significantly underperformed (0.7523), indicating hierarchical chunking is counterproductive for already-atomic complaint documents
 - **Multi-Query Retriever** showed highest faithfulness (0.9691) but with prohibitive latency (15.45s/query)

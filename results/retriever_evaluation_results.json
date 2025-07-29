@@ -1,0 +1,116 @@
+{
+  "timestamp": "2025-07-28T13:04:38.458913",
+  "best_retriever": "Ensemble Retriever",
+  "best_score": 0.8366,
+  "evaluation_results": {
+    "Naive Retriever": {
+      "context_precision": 0.7728060174502284,
+      "context_recall": 0.8459183673469387,
+      "answer_relevancy": 0.7759427677725096,
+      "faithfulness": 0.9617760525976187,
+      "total_latency_seconds": 164.98160004615784,
+      "avg_latency_per_query": 7.8558744703020364,
+      "estimated_cost_usd": 0.0164337,
+      "num_queries": 21
+    },
+    "BM25 Retriever": {
+      "context_precision": 0.8809523809022486,
+      "context_recall": 0.7563492063492064,
+      "answer_relevancy": 0.7539096513119614,
+      "faithfulness": 0.865215469332558,
+      "total_latency_seconds": 133.05834126472473,
+      "avg_latency_per_query": 6.335811399278187,
+      "estimated_cost_usd": 0.008930999999999998,
+      "num_queries": 21
+    },
+    "Contextual Compression": {
+      "context_precision": 0.8809523809071431,
+      "context_recall": 0.7696145124716555,
+      "answer_relevancy": 0.7784923919711488,
+      "faithfulness": 0.9153996694463226,
+      "total_latency_seconds": 171.32683277130127,
+      "avg_latency_per_query": 8.158140829631261,
+      "estimated_cost_usd": 0.006617699999999998,
+      "num_queries": 21
+    },
+    "Multi-Query Retriever": {
+      "context_precision": 0.7469215329203096,
+      "context_recall": 0.8594104308390023,
+      "answer_relevancy": 0.8102921972311302,
+      "faithfulness": 0.9691442094079011,
+      "total_latency_seconds": 324.3616316318512,
+      "avg_latency_per_query": 15.445346378144764,
+      "estimated_cost_usd": 0.023097599999999996,
+      "num_queries": 21
+    },
+    "Parent Document Retriever": {
+      "context_precision": 0.7566137565761022,
+      "context_recall": 0.7479591836734694,
+      "answer_relevancy": 0.8580985250825689,
+      "faithfulness": 0.9198186749447255,
+      "total_latency_seconds": 189.20348358154297,
+      "avg_latency_per_query": 9.009366807483492,
+      "estimated_cost_usd": 0.009267300000000001,
+      "num_queries": 21
+    },
+    "Ensemble Retriever": {
+      "context_precision": 0.7446133951254829,
+      "context_recall": 0.9546485260770975,
+      "answer_relevancy": 0.8257772600756558,
+      "faithfulness": 0.9576561323711458,
+      "total_latency_seconds": 363.3406174182892,
+      "avg_latency_per_query": 17.301461594445364,
+      "estimated_cost_usd": 0.0339525,
+      "num_queries": 21
+    }
+  },
+  "cost_analysis": {
+    "ragas_score": {
+      "Ensemble Retriever": 0.8366,
+      "Contextual Compression": 0.8215,
+      "BM25 Retriever": 0.8139,
+      "Naive Retriever": 0.8077,
+      "Multi-Query Retriever": 0.7992,
+      "Parent Document Retriever": 0.7523
+    },
+    "estimated_cost_usd": {
+      "Ensemble Retriever": 0.034,
+      "Contextual Compression": 0.0066,
+      "BM25 Retriever": 0.0089,
+      "Naive Retriever": 0.0164,
+      "Multi-Query Retriever": 0.0231,
+      "Parent Document Retriever": 0.0093
+    },
+    "avg_latency_per_query": {
+      "Ensemble Retriever": 17.3015,
+      "Contextual Compression": 8.1581,
+      "BM25 Retriever": 6.3358,
+      "Naive Retriever": 7.8559,
+      "Multi-Query Retriever": 15.4453,
+      "Parent Document Retriever": 9.0094
+    },
+    "score_per_dollar": {
+      "Ensemble Retriever": 24.53372434017595,
+      "Contextual Compression": 122.61194029850746,
+      "BM25 Retriever": 90.43333333333334,
+      "Naive Retriever": 48.951515151515146,
+      "Multi-Query Retriever": 34.44827586206897,
+      "Parent Document Retriever": 80.03191489361703
+    },
+    "score_per_second": {
+      "Ensemble Retriever": 0.04835390946502058,
+      "Contextual Compression": 0.10069623201196344,
+      "BM25 Retriever": 0.12845846683186288,
+      "Naive Retriever": 0.10281313645621182,
+      "Multi-Query Retriever": 0.05174356118973934,
+      "Parent Document Retriever": 0.0835007492091681
+    }
+  },
+  "test_data_size": 21,
+  "recommendations": {
+    "production": "Ensemble Retriever",
+    "speed_critical": "BM25 Retriever",
+    "cost_sensitive": "Contextual Compression",
+    "high_accuracy": "Ensemble Retriever"
+  }
+}

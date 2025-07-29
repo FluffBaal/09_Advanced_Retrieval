@@ -87,7 +87,6 @@ temp/
 
 # Output files
 output/
-results/
 evaluation_results.csv
 evaluation_summary.txt
 retriever_evaluation_results.csv
